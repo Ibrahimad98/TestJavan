@@ -29,7 +29,7 @@ module.exports = {
 
     // console.log(data);
 
-    // await queryInterface.bulkInsert("Assets", data);
+    await queryInterface.bulkInsert("Assets", data);
   },
 
   async down(queryInterface, Sequelize) {

@@ -24,7 +24,7 @@ module.exports = {
       { FamilyId: 4, AssetId: 3 },
       { FamilyId: 10, AssetId: 7 },
       { FamilyId: 5, AssetId: 5 },
-      { FamilyId: 10, AssetId: 2 },
+      { FamilyId: 11, AssetId: 2 },
     ];
 
     data.forEach((el) => {
@@ -32,7 +32,7 @@ module.exports = {
     });
 
     // console.log(data);
-    // await queryInterface.bulkInsert("AssetFamilies", data);
+    await queryInterface.bulkInsert("AssetFamilies", data);
   },
 
   async down(queryInterface, Sequelize) {
