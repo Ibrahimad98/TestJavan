@@ -15,7 +15,7 @@ module.exports = {
     let data = [];
     const axios = require("axios");
 
-    let { data: phoneData } = await axios.get("https://dummyjson.com/products?limit=100");
+    let { data: phoneData } = await axios.get("https://dummyjson.com/products?limit=10");
 
     phoneData.products.forEach((el, idx) => {
       data.push({
@@ -23,13 +23,13 @@ module.exports = {
         name: el.title,
         price: el.price,
         createdAt: new Date(),
-        updatedAt: new Date()
-      })
-    })
-    
+        updatedAt: new Date(),
+      });
+    });
+
     // console.log(data);
 
-    // await queryInterface.bulkInsert('Assets', data)
+    // await queryInterface.bulkInsert("Assets", data);
   },
 
   async down(queryInterface, Sequelize) {
@@ -39,6 +39,6 @@ module.exports = {
      * Example:
     //  * await queryInterface.bulkDelete('People', null, {});
      */
-    await queryInterface.bulkDelete('Assets');
+    await queryInterface.bulkDelete("Assets");
   },
 };

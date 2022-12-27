@@ -13,18 +13,18 @@ module.exports = {
      * }], {});
      */
     let data = [
-      { FamilyId: 2, AssetId: "Samsung Universe 9" },
-      { FamilyId: 2, AssetId: "Samsung Galaxy Book" },
-      { FamilyId: 6, AssetId: "iPhone9" },
-      { FamilyId: 7, AssetId: "iPhone X" },
-      { FamilyId: 3, AssetId: "Huawei P30" },
-      { FamilyId: 8, AssetId: "Samsung Universe 9" },
-      { FamilyId: 9, AssetId: "Huawei P30" },
-      { FamilyId: 9, AssetId: "iPhone X" },
-      { FamilyId: 4, AssetId: "Samsung Universe 9" },
-      { FamilyId: 10, AssetId: "Samsung Galaxy Book" },
-      { FamilyId: 5, AssetId: "Huawei P30" },
-      { FamilyId: 10, AssetId: "iPhone X" },
+      { FamilyId: 2, AssetId: 3 },
+      { FamilyId: 2, AssetId: 7 },
+      { FamilyId: 6, AssetId: 1 },
+      { FamilyId: 7, AssetId: 2 },
+      { FamilyId: 3, AssetId: 5 },
+      { FamilyId: 8, AssetId: 3 },
+      { FamilyId: 9, AssetId: 5 },
+      { FamilyId: 9, AssetId: 2 },
+      { FamilyId: 4, AssetId: 3 },
+      { FamilyId: 10, AssetId: 7 },
+      { FamilyId: 5, AssetId: 5 },
+      { FamilyId: 10, AssetId: 2 },
     ];
 
     data.forEach((el) => {

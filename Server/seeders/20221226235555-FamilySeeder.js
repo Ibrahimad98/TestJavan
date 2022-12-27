@@ -22,7 +22,7 @@ module.exports = {
     });
      console.log(data)
 
-  //  await queryInterface.bulkInsert('Families', data)
+   await queryInterface.bulkInsert('Families', data)
   },
 
   async down (queryInterface, Sequelize) {
